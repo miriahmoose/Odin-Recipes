@@ -17,24 +17,33 @@
     <title>Odin Recipes</title>
   </head>
   <body>
-    <nav>
-      <ul class="h-menu">
-        <li>
-          <a href="index.html"><h1>Odin Recipes</h1></a>
-        </li>
-        <li>
-          <a href="#" class="dropdown-toggle">Recipes</a>
-          <ul class="d-menu" data-role="dropdown">
-            <li>
-              <a href="recipes/applepie.html">Apple Pie</a>
-            </li>
-            <li><a href="recipes/pumpkincakebar.html">Pumpkin Cake Bar</a></li>
-            <li>
-              <a href="recipes/snickerdoodle.html">Snickerdoodle Cookies</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html"><img src=""></img></a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html">
+            Home
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Recipes
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="recipes/snickerdoodle.html">
+                Snickerdoodle Cookies
+              </a>
+              <a class="navbar-item" href="recipes/applepie.html">
+                Apple Pie
+              </a>
+              <a class="navbar-item" href="recipes/pumpkincakebar.html">
+                Pumpkin Cake Bar
+              </a>
+            </div>
+          </div>
+        </div>
     </nav>
     <div class="container">
       <div class="grid">
